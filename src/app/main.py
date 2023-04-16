@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from app.api import ping, notes
-from app.db import engine, database, metadata
+from .api import ping, notes
+from ..app.db import engine, database, metadata
 
 metadata.create_all(engine)
 
